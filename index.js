@@ -38,7 +38,7 @@ const AdvisingSession = require('./models/AdvisingSession');
 
 async function initializeDatabase() {
   try {
-    await AdvisingSession.sync();
+    await AdvisingSesssion.sync();
     await AdvisingWindow.sync();
     await Career.sync();
     await CareerCourse.sync();
