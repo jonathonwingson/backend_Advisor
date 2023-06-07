@@ -18,6 +18,7 @@ const jwtGeneratorStaff = require("../utilities/jwtStaff");
 // login to student or staff account
 router.post("/login", async (req, res) => {
     try {
+        console.log("checckpoint1: /login entered");
         const {username, password} = req.body;
         
         const admin = await Staff.findOne({where: { username }});
