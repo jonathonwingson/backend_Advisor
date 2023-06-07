@@ -56,11 +56,13 @@ app.use("/accounts", require("./routes/authorization"));
 // if a bad route is entered
 if (process.env.NODE_ENV === "production") {
     app.get("*", (req, res) => {
-      res.sendFile(path.join(__dirname, "myadvisor/build/index.html"));
+      console.log(" load home ");
+      //res.sendFile(path.join(__dirname, "myadvisor/build/index.html"));
     });
   } else {
     app.get("*", (req, res) => {
-      res.sendFile(path.join(__dirname, "myadvisor/public/index.html"));
+      console.log(" load home 2 ");
+      //res.sendFile(path.join(__dirname, "myadvisor/public/index.html"));
     });
   }
 
