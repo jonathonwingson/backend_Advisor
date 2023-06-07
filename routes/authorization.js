@@ -26,6 +26,7 @@ router.post("/login", async (req, res) => {
         if(!admin && !student) {
             return res.status(401).send("This account does not exist.");
         }
+        
         else if (admin) {
 
             // compares entered password and account password for match

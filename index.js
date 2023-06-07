@@ -32,9 +32,7 @@ const Student = require("./models/Student");
 const StudentCourses = require("./models/StudentCourses");
 const Transcript = require("./models/Transcript");
 
-
 const { ppid } = require("process");
-const AdvisingSession = require('./models/AdvisingSession');
 
 async function initializeDatabase() {
   try {
