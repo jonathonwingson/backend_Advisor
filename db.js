@@ -4,7 +4,7 @@ const Sequelize = require("sequelize");
 // connects database to server
 const db = new Sequelize({
   dialect: "postgres",
-  host: "dpg-ci1kmm0rddl1m6hknfbg-a",
+  host: "postgres://YuKpP0lz6KhxNnsRLExqDQrl64bJj6OS@dpg-ci1kmm0rddl1m6hknfbg-a.oregon-postgres.render.com/myadvisor_database",
   port: "5432",
   database: "myadvisor_database",
   username: "myadvisor_database_user",
