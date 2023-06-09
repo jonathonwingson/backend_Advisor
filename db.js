@@ -3,8 +3,12 @@ const Sequelize = require("sequelize");
 
 // connects database to server
 const db = new Sequelize({
-  dialect: "sqlite",
-  storage: "db-sqlite", // specify the path to your SQLite database file
+  dialect: "postgres",
+  host: "dpg-ci1kmm0rddl1m6hknfbg-a",
+  port: "5432",
+  database: "myadvisor_database",
+  username: "myadvisor_database_user",
+  password: "YuKpP0lz6KhxNnsRLExqDQrl64bJj6OS",
   pool: {
     max: 3,
     min: 0,
