@@ -8,7 +8,7 @@ const db = new Sequelize({
   port: "5432",
   database: "myadvisor_database",
   username: "myadvisor_database_user",
-  password: process.env.DB_PASSWORD,
+  password: "YuKpP0lz6KhxNnsRLExqDQrl64bJj6OS",
   pool: {
     max: 3,
     min: 0,
