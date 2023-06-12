@@ -36,28 +36,3 @@ db.authenticate()
 
 module.exports = db;
 
-
-// const { Sequelize } = require('sequelize');
-
-// const url = 'postgres://myadvisor_database_user:YuKpP0lz6KhxNnsRLExqDQrl64bJj6OS@dpg-ci1kmm0rddl1m6hknfbg-a.oregon-postgres.render.com/myadvisor_database';
-
-// // Extracting database connection information from the URL
-// const [, dialect, username, password, host, database] = url.match(/^(postgres):\/\/([^:]+):([^@]+)@([^/]+)\/(.+)$/);
-
-// const sequelize = new Sequelize(database, username, password, {
-//   host,
-//   dialect,
-// });
-
-// // Test the database connection
-// (async () => {
-//   try {
-//     await sequelize.authenticate();
-//     console.log('Connection has been established successfully.');
-//   } catch (error) {
-//     console.error('Unable to connect to the database:', error);
-//   } finally {
-//     // Close the database connection when done
-//     await sequelize.close();
-//   }
-// })();
